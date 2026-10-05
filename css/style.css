@@ -1,6 +1,26 @@
 /* formating stuff */
 
+body {
+  background-color: #000;
+  color: #fff;
+}
 
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+footer nav {
+  display: flex;
+  gap: 1rem;
+}
 
 /* font stuff*/
 @font-face {
@@ -53,6 +73,11 @@
 
 body {
   font-family: "OpenDyslexic", sans-serif;
+}
+
+body.mono-font {
+  font-family: "Fira Code", monospace;
+  font-size: 1.3em;
 }
 
 code, pre {
