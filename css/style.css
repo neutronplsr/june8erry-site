@@ -28,6 +28,13 @@ h1, h2 {
   color: #00a1a1;
 }
 
+.inline-icon {
+  height: 1.8em;
+  width: auto;
+  vertical-align: middle;
+  margin: 0 0.2em;
+}
+
 .panel {
   border: 8px ridge #00a1a1;
   background-color: rgba(0, 0, 20, 0.5);
