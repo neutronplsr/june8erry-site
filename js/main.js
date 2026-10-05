@@ -8,7 +8,7 @@ const sidebar = document.createElement("nav");
 sidebar.className = "sidebar panel";
 sidebar.innerHTML = `
 <div class="nav-box"><a href="/">home</a></div>
-<div class="nav-box"><a href="/blog/">blog</a></div>
+<div class="nav-box"><a href="/writting/">writting</a></div>
 <div class="nav-box"><a href="/music/">music</a></div>
 <div class="nav-box"><a href="/research/">research</a></div>
 <div class="nav-box"><a href="/about/">about me</a></div>
