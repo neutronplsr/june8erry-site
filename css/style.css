@@ -222,3 +222,34 @@ body.mono-font {
 code, pre {
   font-family: "Fira Code", monospace;
 }
+
+/* mobile */
+@media (max-width: 520px) {
+  .layout {
+    flex-direction: column;
+    margin: 1rem;
+    gap: 1rem;
+  }
+
+  .sidebar {
+    flex: 0 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    position: static;
+  }
+
+  .nav-icon,
+  .link-badge {
+    max-width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 1rem;
+  }
+
+  .content-photo {
+    width: 100%;
+  }
+}
