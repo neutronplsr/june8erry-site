@@ -1,2 +1,2 @@
-A simple(ish*) website for me to host resume/music stuff. Hosted using porkbun static webhosting, at www.juneberry.xyz. Hopefully not too horriblely coded, I haven't used HTML in a second.
+A simple(ish*) website for me to host resume/music stuff. Hosted using porkbun static webhosting, at www.june8erry.xyz. Hopefully not too horriblely coded, I haven't used HTML in a second.
 I am taking really heavy inspiration from old neocities style things, but more specfically from j's (from you are an angel, glass beach, etc.) website awawawa.world/homepage since it is maybe the best website on the internet rn.
