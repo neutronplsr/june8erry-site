@@ -2,7 +2,7 @@
 cd "$(git rev-parse --show-toplevel)" || exit 1
 
 src=$(git config --path --get cv.source)
-out=media/cv.pdf
+out=cv/cv.pdf
 
 [ -n "$src" ] && [ -f "$src" ] || exit 0
 [ ! -f "$out" ] || [ "$src" -nt "$out" ] || exit 0
