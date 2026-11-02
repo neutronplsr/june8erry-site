@@ -46,7 +46,7 @@ h1, h2 {
 .panel {
   border: 8px ridge #00a1a1;
   background-color: rgba(0, 0, 20, 0.5);
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(1.5px);
   box-sizing: border-box;
 }
 
@@ -56,7 +56,7 @@ h1, h2 {
   width: 320px;
   height: auto;
   border: 4px ridge #00a1a1;
-  margin: 1rem 0;
+  margin: 1rem auto;
 }
 
 .layout {
@@ -107,6 +107,16 @@ h1, h2 {
   flex: 1;
   min-width: 0;
   padding: 1.5rem;
+  position: relative;
+  backdrop-filter: none;
+}
+
+.content::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  backdrop-filter: blur(1.5px);
 }
 
 .content a {
@@ -123,6 +133,7 @@ h1, h2 {
 .badge-row {
   display: flex;
   flex-wrap: wrap;
+  justify-content: flex-start;
   gap: 0.5rem;
 }
 
@@ -132,13 +143,28 @@ h1, h2 {
   width: auto;
 }
 
-.content audio {
+.bandcamp-embed {
   display: block;
-  margin: 0.5rem 0;
-  accent-color: #00a1a1;
-  filter: invert(1) hue-rotate(180deg);
-  border: 2px outset #00a1a1;
-  border-radius: 4px;
+  width: 400px;
+  max-width: 100%;
+  margin: 1rem 0;
+  border: 4px ridge #00a1a1;
+  box-sizing: border-box;
+}
+
+.bandcamp-embed img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.bandcamp-embed iframe {
+  display: block;
+  width: 100%;
+  height: 312px;
+  border: 0;
+  filter: invert(1) brightness(1.6);
+  mix-blend-mode: screen;
 }
 
 #font-toggle {
@@ -236,6 +262,7 @@ code, pre {
     width: 100%;
     box-sizing: border-box;
     position: static;
+    order: 1;
   }
 
   .nav-icon,
@@ -244,6 +271,7 @@ code, pre {
   }
 
   .content {
+    order: 0;
     width: 100%;
     box-sizing: border-box;
     padding: 1rem;
